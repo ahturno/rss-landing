@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>রংপুর সহজ সেবা | চাকরি, বাড়ি ও মেস ভাড়া, বাজার দর, কোর্স ও নাগরিক পোর্টাল</title>
+  
+  <!-- Bengali Font: Hind Siliguri & English Accent -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Pro/Free Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            bangla: ['"Hind Siliguri"', 'sans-serif'],
+            sans: ['"Inter"', '"Hind Siliguri"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#bae0fd',
+              300: '#7cc5fb',
+              400: '#38a5f8',
+              500: '#0e87eb',
+              600: '#2563eb', /* Royal Blue */
+              700: '#1d4ed8',
+              800: '#1e40af', /* Deep Navy */
+              900: '#1e3a8a',
+              950: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Hind Siliguri', 'Inter', sans-serif;
+    }
+    .hero-grid-pattern {
+      background-color: #ffffff;
+      background-image: radial-gradient(#2563eb 0.65px, transparent 0.65px), radial-gradient(#cbd5e1 0.65px, #ffffff 0.65px);
+      background-size: 26px 26px;
+      background-position: 0 0, 13px 13px;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1;
+      border-radius: 9999px;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 antialiased selection:bg-brand-600 selection:text-white flex flex-col min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-brand-700 text-white text-xs sm:text-sm py-2.5 px-4 sticky top-0 z-50 shadow-sm border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-3 font-medium">
+      <div class="flex items-center gap-2 overflow-hidden">
+        <span class="inline-flex items-center gap-1.5 bg-white text-brand-900 px-2.5 py-0.5 rounded-full text-xs font-bold shrink-0 shadow-xs">
+          <i class="fa-solid fa-bolt text-amber-500"></i> প্রথম প্ল্যাটফর্ম
+        </span>
+        <span class="truncate">⚡ রংপুরের প্রথম ও স্বয়ংসম্পূর্ণ প্ল্যাটফর্ম, মাশাআল্লাহ • শীঘ্রই আসছে পূর্ণাঙ্গ সেবা!</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-4 text-xs font-semibold shrink-0">
+        <span class="text-blue-100 flex items-center gap-1.5">
+          <i class="fa-solid fa-location-dot text-amber-400"></i> রংপুর সিটি ও পার্শ্ববর্তী উপজেলা
+        </span>
+        <a href="#register" class="bg-white/15 hover:bg-white text-white hover:text-brand-900 px-3 py-1 rounded-full text-xs transition-all font-bold">
+          প্রি-রেজিস্ট্রেশন করুন &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clean Sticky Header -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-[41px] z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center text-white shadow-md shadow-brand-500/25 group-hover:scale-105 transition-transform duration-300">
+            <i class="fa-solid fa-location-dot text-xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                রংপুর <span class="text-brand-600">সহজ সেবা</span>
+              </span>
+              <span class="bg-blue-50 text-brand-700 text-[10px] font-bold px-2 py-0.5 rounded-md border border-brand-200">
+                Official
+              </span>
+            </div>
+            <p class="text-xs text-slate-500 font-medium hidden sm:block">নাগরিক সুবিধা ও আত্মউন্নয়নের একক ডিজিটাল মাধ্যম</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+          <a href="#services" class="hover:text-brand-600 transition-colors">মূল সেবাসমূহ (৮টি)</a>
+          <a href="#courses" class="text-brand-700 font-bold bg-blue-50 px-3 py-1.5 rounded-xl border border-blue-200 flex items-center gap-2 hover:bg-blue-100 transition-colors">
+            <i class="fa-solid fa-graduation-cap text-brand-600"></i>
+            <span>সেলফ ডেভেলপমেন্ট কোর্স</span>
+          </a>
+          <a href="#emergency" class="hover:text-brand-600 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-phone text-red-500 text-xs"></i>
+            <span>জরুরি হেল্পলাইন</span>
+          </a>
+          <a href="#launching" class="hover:text-brand-600 transition-colors">আসন্ন ফিচার</a>
+          <a href="#register" class="hover:text-brand-600 transition-colors">রেজিস্ট্রেশন</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="#register" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs shadow-md shadow-brand-500/25 transition-all">
+            <i class="fa-solid fa-user-plus text-xs"></i>
+            <span>অগ্রিম মেম্বারশিপ</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" type="button" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="মেনু খুলুন">
+          <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-5 py-5 space-y-3 shadow-xl">
+      <div class="flex flex-col space-y-2 text-sm font-semibold text-slate-700">
+        <a href="#services" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-blue-50 hover:text-brand-600">
+          <i class="fa-solid fa-grid-2 mr-2 text-brand-600"></i> মূল ৮টি সেবা
+        </a>
+        <a href="#courses" class="mobile-nav-link py-2.5 px-3 rounded-lg bg-blue-50 text-brand-700 font-bold flex items-center justify-between">
+          <span><i class="fa-solid fa-graduation-cap mr-2 text-brand-600"></i> সেলফ ডেভেলপমেন্ট কোর্স (সাঁতার, ড্রাইভিং, কারাতে)</span>
+          <span class="text-[10px] bg-brand-600 text-white px-2 py-0.5 rounded-full font-bold">নতুন</span>
+        </a>
+        <a href="#emergency" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-blue-50 hover:text-brand-600">
+          <i class="fa-solid fa-phone mr-2 text-red-500"></i> জরুরি ডিরেক্টরি
+        </a>
+        <a href="#launching" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-blue-50 hover:text-brand-600">
+          <i class="fa-solid fa-rocket mr-2 text-brand-600"></i> ডেভেলপমেন্ট অগ্রগতি
+        </a>
+        <a href="#register" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-blue-50 hover:text-brand-600">
+          <i class="fa-solid fa-file-pen mr-2 text-brand-600"></i> প্রি-রেজিস্ট্রেশন ফর্ম
+        </a>
+      </div>
+      <div class="pt-2 border-t border-slate-100">
+        <a href="#register" class="mobile-nav-link w-full py-3 text-center rounded-xl bg-brand-600 text-white font-bold block shadow-md text-xs">
+          অগ্রিম সদস্যপদ নিন
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-12 pb-16 md:pt-20 md:pb-24 hero-grid-pattern border-b border-slate-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-4xl mx-auto">
+        
+        <!-- Platform Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-brand-200 text-brand-800 text-xs sm:text-sm font-semibold mb-6 shadow-xs">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>📍 Rangpur Sohoz Seba • রংপুরের প্রথম ও স্বয়ংসম্পূর্ণ প্ল্যাটফর্ম, মাশাআল্লাহ</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight sm:leading-tight mb-6">
+          চাকরি, বাড়ি ও মেস ভাড়া, বাজার দর থেকে <br class="hidden sm:inline">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-700 via-brand-600 to-sky-600">
+            সেলফ ডেভেলপমেন্ট কোর্স
+          </span>
+          <br>সব সেবা এবার এক ঠিকানায়!
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto mb-8 font-normal leading-relaxed">
+          আমরা রংপুরবাসীর দৈনন্দিন নাগরিক সমস্যা সমাধানের লক্ষ্যে তৈরি করছি একটি সমন্বিত প্ল্যাটফর্ম। যেখানে নিত্যপ্রয়োজনীয় তথ্যের পাশাপাশি পাওয়া যাবে বাস্তবমুখী সেলফ ডেভেলপমেন্ট লাইফ-স্কিল কোর্স। আমাদের পূর্ণাঙ্গ ওয়েবসাইটের কাজ দ্রুত এগিয়ে চলছে।
+        </p>
+
+        <!-- Services Pill Strip -->
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-md max-w-3xl mx-auto mb-8 flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-700">
+          <span class="text-brand-700 font-bold bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-100">
+            <i class="fa-solid fa-layer-group mr-1"></i> এক নজরে সেবাসমূহ:
+          </span>
+          <span class="hover:text-brand-600 transition-colors">চাকরি</span>
+          <span class="text-slate-300">|</span>
+          <span class="hover:text-brand-600 transition-colors">বাড়ি/দোকান/মেস ভাড়া</span>
+          <span class="text-slate-300">|</span>
+          <span class="hover:text-brand-600 transition-colors">ক্রয়-বিক্রয়</span>
+          <span class="text-slate-300">|</span>
+          <span class="hover:text-brand-600 transition-colors">আপডেট নিউজ</span>
+          <span class="text-slate-300">|</span>
+          <span class="hover:text-brand-600 transition-colors">বাজার দর</span>
+          <span class="text-slate-300">|</span>
+          <span class="hover:text-brand-600 transition-colors">ডিসকাউন্ট অফার</span>
+          <span class="text-slate-300">|</span>
+          <span class="hover:text-brand-600 transition-colors">জরুরি তথ্য ও সেবা</span>
+          <span class="text-slate-300">|</span>
+          <span class="text-brand-600 font-bold bg-amber-50 px-2 py-0.5 rounded border border-amber-200">কোর্স</span>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-brand-500/25 transition-all transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-list-check"></i>
+            <span>সকল সেবার বিস্তারিত দেখুন</span>
+          </a>
+          <a href="#courses" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-brand-800 border-2 border-brand-200 hover:border-brand-600 font-bold text-sm sm:text-base shadow-sm transition-all transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-dumbbell text-brand-600"></i>
+            <span>সেলফ ডেভেলপমেন্ট কোর্স</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 Core Services Section -->
+  <section id="services" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs sm:text-sm font-bold tracking-wider text-brand-600 uppercase bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
+          আমাদের প্রধান সেবাসমূহ
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">
+          রংপুর সহজ সেবার ৮টি মৌলিক স্তম্ভ
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          রংপুরের স্থানীয় অধিবাসীদের নিত্যদিনের প্রয়োজনকে সহজে মেটাতে প্রতিটি সেবা সাজানো হয়েছে আধুনিক তথ্যপ্রযুক্তির সমন্বয়ে।
+        </p>
+      </div>
+
+      <!-- 8-Card Grid Layout -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Card 1: চাকরি -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-600 flex items-center justify-center text-xl mb-4 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-slate-900">চাকরি ও নিয়োগ</h3>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-100 text-brand-800">ভেরিফায়েড</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              রংপুরের স্থানীয় ক্লিনিক, শোরুম, এনজিও, আইটি ফার্ম, শিক্ষাপ্রতিষ্ঠান ও ব্যবসার যাচাইকৃত শতভাগ নির্ভরযোগ্য চাকরির বিজ্ঞপ্তি।
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-brand-600 font-semibold">
+            <span>ক্যারিয়ার পোর্টাল</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Card 2: বাড়ি / দোকান / মেস ভাড়া -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-xl mb-4 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-house-chimney-user"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-slate-900">বাড়ি/দোকান/মেস ভাড়া</h3>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-sky-100 text-sky-800">দালালমুক্ত</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              বেরোবি, কারমাইকেল ও মেডিকেল সংলগ্ন ছাত্র/ছাত্রী মেস, ব্যাচেলর সাবলেট, ফ্যামিলি ফ্ল্যাট এবং বাণিজ্যিক দোকান ভাড়ার সরাসরি তথ্য।
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-sky-600 font-semibold">
+            <span>টু-লেট ডিরেক্টরি</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Card 3: ক্রয়-বিক্রয় -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-slate-900">ক্রয়-বিক্রয় মার্কেট</h3>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-indigo-100 text-indigo-800">লোকাল</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              মোবাইল, ল্যাপটপ, বাইক, সাইকেল, ইলেকট্রনিক্স ও আসবাবপত্র রংপুরের স্থানীয় বাসিন্দাদের মাঝে সরাসরি ও নিরাপদে লেনদেন।
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-indigo-600 font-semibold">
+            <span>ফ্রি লিস্টিং</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Card 4: আপডেট নিউজ -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl mb-4 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-slate-900">আপডেট নিউজ</h3>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-teal-100 text-teal-800">গুজবমুক্ত</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              রংপুরের আবহাওয়া বার্তা, বিদ্যুৎ লোডশেডিং শিডিউল, ট্রাফিক ডাইভারশন, ট্রেন সময়সূচী এবং স্থানীয় প্রশাসনিক ও নাগরিক নোটিশ।
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-teal-600 font-semibold">
+            <span>রংপুর লাইভ</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Card 5: বাজার দর -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-slate-900">দৈনিক বাজার দর</h3>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">সকাল ৮টা</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              সিটি বাজার, শাপলা চত্বর ও লালবাগ বাজারের নিত্যপ্রয়োজনীয় কাঁচাবাজার, চাল, ডাল, তেল, মাছ, মাংস ও ডিমের পাইকারি-খুচরা সঠিক দর।
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-emerald-600 font-semibold">
+            <span>বাজার তালিকা</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Card 6: ডিসকাউন্ট অফার -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-slate-900">ডিসকাউন্ট অফার</h3>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">স্পেশাল কুপন</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              রংপুরের জনপ্রিয় রেস্তোরাঁ, ডায়াগনস্টিক ল্যাব, কাপড়ের শোরুম ও জিম সেন্টারের এক্সক্লুসিভ ছাড় এবং ক্যাশব্যাক সুবিধা।
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-amber-600 font-semibold">
+            <span>অফার উপভোগ করুন</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Card 7: জরুরি তথ্য ও সেবা -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-xl mb-4 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-slate-900">জরুরি তথ্য ও সেবা</h3>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-800">২৪/৭ হটলাইন</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              রংপুর মেডিকেল, এম্বুলেন্স, ফায়ার সার্ভিস, পুলিশ কন্ট্রোল রুম এবং জরুরি রক্তদাতা স্বেচ্ছাসেবকদের যাচাইকৃত কন্টাক্ট ডিরেক্টরি।
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-rose-600 font-semibold">
+            <span>জরুরি হেল্পলাইন</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Card 8: সেলফ ডেভেলপমেন্ট কোর্স (Featured) -->
+        <div class="bg-gradient-to-b from-blue-50 to-white rounded-2xl p-6 border-2 border-brand-400 hover:border-brand-600 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute -right-7 -top-7 w-20 h-20 bg-brand-600 text-white rounded-full flex items-end justify-center pb-2 text-[10px] font-bold rotate-45">
+            নতুন
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl mb-4 shadow-md shadow-brand-500/25">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-slate-900">সেলফ ডেভেলপমেন্ট কোর্স</h3>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-brand-100 text-brand-900">লাইফ স্কিল</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              সাঁতার, ডুয়াল-কন্ট্রোল ড্রাইভিং, কারাতে ও আত্মরক্ষা, সিপিআর এবং আউটডোর ফিটনেসের মত বাস্তব জীবনরক্ষাকারী প্রশিক্ষণ।
+            </p>
+          </div>
+          <a href="#courses" class="pt-4 border-t border-brand-100 flex items-center justify-between text-xs text-brand-700 font-bold hover:text-brand-900">
+            <span>কোর্স তালিকা দেখুন</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dedicated Self-Development Courses Section -->
+  <section id="courses" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs sm:text-sm font-bold tracking-wider text-brand-700 uppercase bg-blue-100 px-3.5 py-1.5 rounded-full border border-blue-200">
+            বাস্তবমুখী লাইফ স্কিল ডেভেলপমেন্ট
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-2">
+            সেলফ ডেভেলপমেন্ট ও জীবনমুখী প্রশিক্ষণ
+          </h2>
+          <p class="text-slate-600 text-base max-w-2xl">
+            নিজের নিরাপত্তা, জরুরি সংকট মোকাবেলা, শারীরিক সক্ষমতা এবং আত্মবিশ্বাস বাড়ানোর জন্য রংপুরের অভিজ্ঞ ও সার্টিফাইড ট্রেইনারদের বিশেষ কোর্সসমূহ।
+          </p>
+        </div>
+        <div class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-xs text-slate-600 shadow-2xs flex items-center gap-2 self-start md:self-auto font-medium">
+          <i class="fa-solid fa-certificate text-brand-600"></i>
+          <span>নারী ও শিশুদের জন্য আলাদা সংরক্ষিত ব্যাচ</span>
+        </div>
+      </div>
+
+      <!-- Self Development Disciplines Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Course Card 1: সাঁতার শেখা -->
+        <div class="bg-white rounded-2xl border-2 border-slate-200 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-xl group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                <i class="fa-solid fa-person-swimming"></i>
+              </span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-sky-100 text-sky-800">নারী ও শিশু ব্যাচ</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">সাঁতার প্রশিক্ষণ (Swimming & Survival)</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              পানিতে ভীতি দূরীকরণ, ব্রেথ কন্ট্রোল এবং লাইফ-সেভিং ডিপ ওয়াটার সার্ভাইভাল টেকনিক। নারী প্রশিক্ষক দ্বারা নারীদের আলাদা ব্যবস্থা।
+            </p>
+            <div class="space-y-2 text-xs text-slate-600 mb-6 font-medium">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-brand-600 text-xs"></i>
+                <span>নিরাপদ ও ক্লোরিন নিয়ন্ত্রিত সুইমিং পুল</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-brand-600 text-xs"></i>
+                <span>১৫ দিন ও ১ মাসের বিশেষ কোর্স শিডিউল</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-500">মেয়াদ: ১৫-৩০ দিন</span>
+            <button onclick="selectCourseToForm('সাঁতার প্রশিক্ষণ (Swimming & Survival)')" class="px-4 py-2 rounded-xl bg-brand-50 hover:bg-brand-600 text-brand-700 hover:text-white text-xs font-bold transition-colors">
+              আগ্রহ প্রকাশ করুন &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Course Card 2: ড্রাইভিং ট্রেনিং -->
+        <div class="bg-white rounded-2xl border-2 border-slate-200 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-blue-50 text-brand-600 flex items-center justify-center text-xl group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                <i class="fa-solid fa-car-side"></i>
+              </span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-blue-100 text-brand-800">BRTA টেস্ট গাইড</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">ড্রাইভিং ট্রেনিং (Car & Motorbike)</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              ম্যানুয়াল ও অটো গিয়ার কার এবং মোটরসাইকেল চালানো। ডুয়াল-কন্ট্রোল সেফটি কারে সরাসরি রোডে ড্রাইভের বাস্তব অভিজ্ঞতা।
+            </p>
+            <div class="space-y-2 text-xs text-slate-600 mb-6 font-medium">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-brand-600 text-xs"></i>
+                <span>ট্রাফিক আইন ও বেসিক ইঞ্জিন মেকানিক্স</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-brand-600 text-xs"></i>
+                <span>ড্রাইভিং লাইসেন্স আবেদনের পূর্ণাঙ্গ প্রস্তুতি</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-500">প্র্যাকটিক্যাল রোড টেস্ট</span>
+            <button onclick="selectCourseToForm('ড্রাইভিং ট্রেনিং (Car & Motorbike)')" class="px-4 py-2 rounded-xl bg-brand-50 hover:bg-brand-600 text-brand-700 hover:text-white text-xs font-bold transition-colors">
+              আগ্রহ প্রকাশ করুন &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Course Card 3: কারাতে ও আত্মরক্ষা -->
+        <div class="bg-white rounded-2xl border-2 border-slate-200 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center text-xl group-hover:bg-red-600 group-hover:text-white transition-colors">
+                <i class="fa-solid fa-user-ninja"></i>
+              </span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-red-100 text-red-800">আত্মরক্ষা ও ফিটনেস</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">কারাতে ও আত্মরক্ষা (Martial Arts)</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              হঠাৎ শারীরিক হামলা বা হেনস্থা থেকে বাঁচার বাস্তব কৌশল। শিক্ষার্থী ও কর্মজীবী নারীদের জন্য বিশেষভাবে ডিজাইন করা আত্মরক্ষা মডিউল।
+            </p>
+            <div class="space-y-2 text-xs text-slate-600 mb-6 font-medium">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-red-600 text-xs"></i>
+                <span>ব্ল্যাক বেল্ট সার্টিফাইড কোচের তত্ত্বাবধান</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-red-600 text-xs"></i>
+                <span>স্ট্যামিনা বৃদ্ধি, ফ্লেক্সিবিলিটি ও মানসিক সাহস</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-500">উইকএন্ড / নিয়মিত ব্যাচ</span>
+            <button onclick="selectCourseToForm('কারাতে ও আত্মরক্ষা (Martial Arts)')" class="px-4 py-2 rounded-xl bg-red-50 hover:bg-red-600 text-red-700 hover:text-white text-xs font-bold transition-colors">
+              আগ্রহ প্রকাশ করুন &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Course Card 4: ফার্স্ট এইড ও সিপিআর -->
+        <div class="bg-white rounded-2xl border-2 border-slate-200 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">জরুরি জীবনরক্ষা</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">ফার্স্ট এইড ও সিপিআর (CPR Training)</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              হার্ট অ্যাটাক, দুর্ঘটনা বা পানিতে ডোবা মানুষকে হাসপাতালে নেওয়ার আগ মুহূর্তে সিপিআর ও ব্যান্ডেজিং করে প্রাণ বাঁচানোর বাস্তব প্রশিক্ষণ।
+            </p>
+            <div class="space-y-2 text-xs text-slate-600 mb-6 font-medium">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i>
+                <span>মেডিকেল ম্যানিকুইন দিয়ে হ্যান্ডস-অন প্র্যাকটিস</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i>
+                <span>বেসিক লাইফ সাপোর্ট (BLS) সার্টিফিকেট</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-500">ওয়ার্কশপ ভিত্তিক</span>
+            <button onclick="selectCourseToForm('ফার্স্ট এইড ও সিপিআর (CPR Training)')" class="px-4 py-2 rounded-xl bg-emerald-50 hover:bg-emerald-600 text-emerald-700 hover:text-white text-xs font-bold transition-colors">
+              আগ্রহ প্রকাশ করুন &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Course Card 5: সাইক্লিং ও আউটডোর ফিটনেস -->
+        <div class="bg-white rounded-2xl border-2 border-slate-200 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                <i class="fa-solid fa-bicycle"></i>
+              </span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-100 text-amber-800">শারীরিক সুস্থতা</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">সাইক্লিং ও আউটডোর ফিটনেস</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              জিরো থেকে বাইসাইকেল ব্যালান্সিং শেখা, রোড সেফটি রুলস এবং ওজন নিয়ন্ত্রণ ও সুস্থতার জন্য নিয়মিত সাইক্লিং গাইডেন্স।
+            </p>
+            <div class="space-y-2 text-xs text-slate-600 mb-6 font-medium">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-amber-600 text-xs"></i>
+                <span>বয়স্ক ও নতুনদের ব্যালান্সিং টেকনিক</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-amber-600 text-xs"></i>
+                <span>রংপুর হাইওয়ে ও তিস্তা ব্যারেজ গ্রুপ রাইডিং</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-500">সব বয়সের জন্য উন্মুক্ত</span>
+            <button onclick="selectCourseToForm('সাইক্লিং ও আউটডোর ফিটনেস')" class="px-4 py-2 rounded-xl bg-amber-50 hover:bg-amber-600 text-amber-700 hover:text-white text-xs font-bold transition-colors">
+              আগ্রহ প্রকাশ করুন &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Course Card 6: পাবলিক স্পিকিং ও কনফিডেন্স -->
+        <div class="bg-white rounded-2xl border-2 border-slate-200 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                <i class="fa-solid fa-microphone-lines"></i>
+              </span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-800">ব্যক্তিত্ব বিকাশ</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">পাবলিক স্পিকিং ও ব্যক্তিত্ব বিকাশ</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              মঞ্চভীতি দূরীকরণ, প্রেজেন্টেশন ও ভাইভাতে দ্বিধাহীন স্পষ্ট কথা বলা এবং সামাজিক যোগাযোগে আত্মবিশ্বাসী ব্যক্তিত্ব গড়ে তোলা।
+            </p>
+            <div class="space-y-2 text-xs text-slate-600 mb-6 font-medium">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-purple-600 text-xs"></i>
+                <span>বডি ল্যাঙ্গুয়েজ ও কনভারসেশন স্কিলস</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-purple-600 text-xs"></i>
+                <span>মক ইন্টারভিউ ও লিডারশিপ প্র্যাকটিস</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-500">স্মার্ট প্রেজেন্টেশন</span>
+            <button onclick="selectCourseToForm('পাবলিক স্পিকিং ও ব্যক্তিত্ব বিকাশ')" class="px-4 py-2 rounded-xl bg-purple-50 hover:bg-purple-600 text-purple-700 hover:text-white text-xs font-bold transition-colors">
+              আগ্রহ প্রকাশ করুন &rarr;
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Emergency Helplines Directory -->
+  <section id="emergency" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold text-red-600 uppercase tracking-widest bg-red-50 px-3 py-1 rounded-full border border-red-200">
+            জরুরি নাগরিক ডিরেক্টরি
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+            রংপুর জরুরি হেল্পলাইন ও কন্টাক্ট নম্বর
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1">প্রয়োজনের মুহূর্তে সঠিক নম্বরে এক ক্লিকেই সরাসরি কল করুন</p>
+        </div>
+        <div class="bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-xl text-xs text-brand-800 font-semibold inline-flex items-center gap-2 self-start md:self-auto">
+          <i class="fa-solid fa-circle-check text-brand-600"></i>
+          <span>ভেরিফায়েড কন্টাক্টস</span>
+        </div>
+      </div>
+
+      <!-- Emergency Hotline Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <!-- Emergency Item 1 -->
+        <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:border-red-400 transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-9 h-9 rounded-xl bg-red-100 text-red-600 flex items-center justify-center font-bold">
+              <i class="fa-solid fa-hospital"></i>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-500">হাসপাতাল</span>
+          </div>
+          <h4 class="font-bold text-slate-800 text-sm mb-1">রংপুর মেডিকেল কলেজ (RpMC)</h4>
+          <p class="text-xs text-slate-500 mb-3">জরুরি বিভাগ ও সার্বক্ষণিক এম্বুলেন্স</p>
+          <a href="tel:052162111" class="w-full flex items-center justify-between text-xs font-bold text-brand-700 bg-white hover:bg-blue-50 border border-slate-200 p-2.5 rounded-xl transition-colors">
+            <span>০৫২১-৬২১১১</span>
+            <i class="fa-solid fa-phone-flip text-brand-600"></i>
+          </a>
+        </div>
+
+        <!-- Emergency Item 2 -->
+        <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:border-orange-400 transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-9 h-9 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center font-bold">
+              <i class="fa-solid fa-fire-extinguisher"></i>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-500">ফায়ার সার্ভিস</span>
+          </div>
+          <h4 class="font-bold text-slate-800 text-sm mb-1">রংপুর ফায়ার সার্ভিস স্টেশন</h4>
+          <p class="text-xs text-slate-500 mb-3">অগ্নি ও দুর্যোগ নিয়ন্ত্রণ হেল্পলাইন</p>
+          <a href="tel:01730002424" class="w-full flex items-center justify-between text-xs font-bold text-brand-700 bg-white hover:bg-blue-50 border border-slate-200 p-2.5 rounded-xl transition-colors">
+            <span>০১৭৩০-০০২৪২৪</span>
+            <i class="fa-solid fa-phone-flip text-brand-600"></i>
+          </a>
+        </div>
+
+        <!-- Emergency Item 3 -->
+        <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:border-blue-400 transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-9 h-9 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center font-bold">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-500">পুলিশ কন্ট্রোল</span>
+          </div>
+          <h4 class="font-bold text-slate-800 text-sm mb-1">রংপুর মেট্রোপলিটন পুলিশ (RPMP)</h4>
+          <p class="text-xs text-slate-500 mb-3">কন্ট্রোল রুম ও জরুরি সহায়তা</p>
+          <a href="tel:01320073999" class="w-full flex items-center justify-between text-xs font-bold text-brand-700 bg-white hover:bg-blue-50 border border-slate-200 p-2.5 rounded-xl transition-colors">
+            <span>০১৩২০-০৭৩৯৯৯</span>
+            <i class="fa-solid fa-phone-flip text-brand-600"></i>
+          </a>
+        </div>
+
+        <!-- Emergency Item 4 -->
+        <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:border-rose-400 transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <span class="text-[11px] font-semibold text-slate-500">রক্তদাতা সোসাইটি</span>
+          </div>
+          <h4 class="font-bold text-slate-800 text-sm mb-1">রংপুর জরুরি রক্ত সেবা</h4>
+          <p class="text-xs text-slate-500 mb-3">জাতীয় জরুরি সেবা / ৯৯৯</p>
+          <a href="tel:999" class="w-full flex items-center justify-between text-xs font-bold text-rose-700 bg-white hover:bg-rose-50 border border-slate-200 p-2.5 rounded-xl transition-colors">
+            <span>ডায়াল: ৯৯৯</span>
+            <i class="fa-solid fa-phone-flip text-rose-600"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Launch Status Roadmap Banner -->
+  <section id="launching" class="py-14 bg-brand-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-800 border border-brand-700 text-blue-200 text-xs font-bold mb-4">
+          <i class="fa-solid fa-clock text-amber-400"></i>
+          <span>লঞ্চিং স্ট্যাটাস ও অগ্রগতি</span>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold mb-3">
+          পূর্ণাঙ্গ রংপুর সহজ সেবা পোর্টাল খুব দ্রুত আসছে!
+        </h3>
+        <p class="text-blue-100 text-xs sm:text-sm mb-8 leading-relaxed">
+          আমরা রংপুরবাসীর সুবিধার্থে একটি নিখুঁত ও সিকিউর প্ল্যাটফর্ম তৈরি করছি যাতে প্রতিটি বাসা ভাড়া, বাজার দর, চাকরির খবর এবং কোর্স আপনি খুব সহজেই এক ক্লিকে পেতে পারেন।
+        </p>
+
+        <!-- Progress Tracker -->
+        <div class="bg-brand-950/60 p-6 rounded-2xl border border-brand-700/60 text-left mb-6 shadow-inner">
+          <div class="flex items-center justify-between text-xs sm:text-sm font-bold mb-2">
+            <span class="text-blue-100">ওয়েব অ্যাপ্লিকেশন ও ডাটাবেস কাঠামো প্রস্তুতি</span>
+            <span class="text-amber-300 font-extrabold">৯০% সম্পন্ন</span>
+          </div>
+          <div class="w-full bg-slate-800 h-3 rounded-full overflow-hidden p-0.5">
+            <div class="bg-gradient-to-r from-blue-400 via-sky-300 to-emerald-400 h-full rounded-full transition-all duration-1000" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 text-xs text-blue-200">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> মেস ও টু-লেট ভেরিফিকেশন</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> লাইফ স্কিল কোর্স তালিকা</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> রংপুর লোকাল মার্কেটপ্লেস</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-spinner fa-spin text-amber-300"></i> ফাইনাল টেস্টিং</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Early Access & Lead Capture Form -->
+  <section id="register" class="py-20 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200">
+        
+        <div class="text-center max-w-xl mx-auto mb-8">
+          <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mx-auto mb-3 text-xl">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">
+            অগ্রিম রেজিস্ট্রেশন ও মেম্বারশিপ
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm">
+            ওয়েবসাইট লঞ্চ হওয়ার সাথে সাথে বিজ্ঞপ্তি পেতে এবং সাঁতার, ড্রাইভিং বা কারাতে কোর্সে অগ্রাধিকার পেতে আপনার তথ্য জমা রাখুন।
+          </p>
+        </div>
+
+        <!-- Success Toast Notification -->
+        <div id="form-alert" class="hidden mb-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm items-center gap-3">
+          <i class="fa-solid fa-circle-check text-emerald-600 text-xl shrink-0"></i>
+          <div>
+            <p class="font-bold">আলহামদুলিল্লাহ! আপনার অনুরোধ সফলভাবে গৃহীত হয়েছে।</p>
+            <p class="text-xs text-emerald-700">রংপুর সহজ সেবা টিম থেকে আপনার নম্বরে শীঘ্রই যোগাযোগ করা হবে।</p>
+          </div>
+        </div>
+
+        <!-- The Registration Form -->
+        <form id="lead-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="user-name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">আপনার নাম *</label>
+              <input type="text" id="user-name" required placeholder="উদাঃ তৌহিদুল ইসলাম" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm">
+            </div>
+            <div>
+              <label for="user-phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">মোবাইল / WhatsApp নম্বর *</label>
+              <input type="tel" id="user-phone" required placeholder="017XXXXXXXX" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="user-area" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">রংপুরের এলাকা / লোকেশন *</label>
+              <select id="user-area" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm bg-white text-slate-700">
+                <option value="" disabled selected>আপনার এলাকা নির্বাচন করুন</option>
+                <option value="জাহাজ কোম্পানি মোড়">জাহাজ কোম্পানি মোড়</option>
+                <option value="পায়রা চত্বর">পায়রা চত্বর</option>
+                <option value="ডিসির মোড়">ডিসির মোড়</option>
+                <option value="লালবাগ / কারমাইকেল রোড">লালবাগ / কারমাইকেল রোড</option>
+                <option value="বেগম রোকেয়া বিশ্ববিদ্যালয় এরিয়া">বেগম রোকেয়া বিশ্ববিদ্যালয় এরিয়া</option>
+                <option value="মেডিকেল / ধাপ এলাকা">ধাপ / মেডিকেল কলেজ এলাকা</option>
+                <option value="শাপলা চত্বর / গ্র্যান্ড হোটেল মোড়">শাপলা চত্বর / গ্র্যান্ড হোটেল মোড়</option>
+                <option value="মডার্ন মোড় / দর্শনা">মডার্ন মোড় / দর্শনা</option>
+                <option value="অন্যান্য এলাকা">অন্যান্য এলাকা</option>
+              </select>
+            </div>
+            <div>
+              <label for="user-service" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">আগ্রহের সেবা বা কোর্স *</label>
+              <select id="user-service" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm bg-white text-slate-700">
+                <option value="" disabled selected>সার্ভিস বা কোর্স নির্বাচন করুন</option>
+                <option value="সাঁতার প্রশিক্ষণ (Swimming & Survival)">🏊‍♂️ সাঁতার প্রশিক্ষণ (Swimming)</option>
+                <option value="ড্রাইভিং ট্রেনিং (Car & Motorbike)">🚗 ড্রাইভিং ট্রেনিং (Car & Bike)</option>
+                <option value="কারাতে ও আত্মরক্ষা (Martial Arts)">🥋 কারাতে ও আত্মরক্ষা (Karate)</option>
+                <option value="ফার্স্ট এইড ও সিপিআর (CPR Training)">🩹 ফার্স্ট এইড ও সিপিআর</option>
+                <option value="সাইক্লিং ও আউটডোর ফিটনেস">🚲 সাইক্লিং ও আউটডোর ফিটনেস</option>
+                <option value="পাবলিক স্পিকিং ও ব্যক্তিত্ব বিকাশ">🎙️ পাবলিক স্পিকিং ও ব্যক্তিত্ব বিকাশ</option>
+                <option value="চাকরি প্রার্থী / নিয়োগ বিজ্ঞপ্তি">💼 চাকরি ও নিয়োগ বিজ্ঞপ্তি</option>
+                <option value="বাড়ি / মেস ভাড়া (To-Let)">🏠 বাড়ি / মেস ভাড়া (To-Let)</option>
+                <option value="ক্রয়-বিক্রয় মার্কেট">🔄 ক্রয়-বিক্রয় বিজ্ঞাপন</option>
+                <option value="বাজার দর ও ডিসকাউন্ট অফার">🛒 বাজার দর ও ডিসকাউন্ট অফার</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="user-note" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">আপনার কোনো নির্দিষ্ট জিজ্ঞাসা (ঐচ্ছিক)</label>
+            <textarea id="user-note" rows="3" placeholder="যেমনঃ সাঁতারের নারী ব্যাচ সম্পর্কে জানতে চাই বা মেস ভাড়া তথ্য খুঁজছি..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm"></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" id="form-submit-btn" class="w-full py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-brand-500/25 transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane text-xs"></i>
+              <span>আগ্রহ জমা দিন (Register Early Access)</span>
+            </button>
+          </div>
+
+          <p class="text-center text-[11px] text-slate-400 mt-2">
+            <i class="fa-solid fa-lock text-[10px] mr-1"></i> আপনার তথ্যের সম্পূর্ণ গোপনীয়তা নিশ্চিত করা হবে।
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-950 text-slate-300 pt-16 pb-10 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Brand Summary -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white font-bold">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <span class="text-xl font-bold text-white tracking-tight">
+              রংপুর <span class="text-brand-400">সহজ সেবা</span>
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            রংপুরবাসীর দৈনন্দিন জীবনকে প্রযুক্তির সাহায্যে স্বাচ্ছন্দ্যময় করতে এবং বাস্তবমুখী জীবনদক্ষতা অর্জনে আমাদের একতাবদ্ধ প্রয়াস।
+          </p>
+          <div class="flex items-center gap-3 pt-1">
+            <a href="https://www.facebook.com/rangpursohozseba" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-brand-600 text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-facebook-f text-xs"></i>
+            </a>
+            <a href="01410-077505" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-emerald-600 text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+            </a>
+            <a href="rangpursohozseba@gmail.com" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-sky-500 text-white flex items-center justify-center transition-colors">
+              <i class="fa-solid fa-envelope text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 8 Core Services Links -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-4">নাগরিক সেবাসমূহ</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-400">
+            <li><a href="#services" class="hover:text-white transition-colors">• চাকরি ও নিয়োগ বিজ্ঞপ্তি</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">• বাড়ি/দোকান/মেস টু-লেট</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">• লোকাল ক্রয়-বিক্রয়</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">• দৈনিক কাঁচাবাজার দর</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">• আপডেট নিউজ ও নোটিশ</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">• ডিসকাউন্ট কুপন ও অফার</a></li>
+          </ul>
+        </div>
+
+        <!-- Courses Links -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-4">সেলফ ডেভেলপমেন্ট কোর্স</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-400">
+            <li><a href="#courses" class="hover:text-white transition-colors">• সাঁতার প্রশিক্ষণ (সুইমিং)</a></li>
+            <li><a href="#courses" class="hover:text-white transition-colors">• ড্রাইভিং ট্রেনিং (কার ও বাইক)</a></li>
+            <li><a href="#courses" class="hover:text-white transition-colors">• কারাতে ও মার্শাল আর্ট</a></li>
+            <li><a href="#courses" class="hover:text-white transition-colors">• ফার্স্ট এইড ও সিপিআর</a></li>
+            <li><a href="#courses" class="hover:text-white transition-colors">• পাবলিক স্পিকিং ও কনফিডেন্স</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Location -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-4">যোগাযোগ ও অফিস</h4>
+          <div class="space-y-3 text-xs sm:text-sm text-slate-400">
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot text-brand-400 shrink-0 mt-1"></i>
+              <span>Rangpur, Bangladesh</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-phone text-brand-400 shrink-0"></i>
+              <span>+880 01410-077505 (হেল্পলাইন)</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-envelope text-brand-400 shrink-0"></i>
+              <span>info@rangpursohozseba.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-8 border-t border-slate-800 text-center sm:flex sm:justify-between sm:items-center text-xs text-slate-500">
+        <p>© রংপুর সহজ সেবা (Rangpur Sohoz Seba) — রংপুর। সর্বস্বত্ব সংরক্ষিত।</p>
+        <p class="mt-2 sm:mt-0 text-slate-400">
+          ⚡ রংপুরের প্রথম ও স্বয়ংসম্পূর্ণ প্ল্যাটফর্ম, মাশাআল্লাহ
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript Interactions -->
+  <script>
+    // Mobile Drawer Toggle
+    const mobileBtn = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuLinks = document.querySelectorAll('.mobile-nav-link');
+    const menuIcon = document.getElementById('menu-icon');
+
+    mobileBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      if (isHidden) {
+        menuIcon.className = 'fa-solid fa-bars text-xl';
+      } else {
+        menuIcon.className = 'fa-solid fa-xmark text-xl';
+      }
+    });
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'fa-solid fa-bars text-xl';
+      });
+    });
+
+    // Auto select course in registration form
+    function selectCourseToForm(courseName) {
+      const selectBox = document.getElementById('user-service');
+      const noteBox = document.getElementById('user-note');
+      const registerSection = document.getElementById('register');
+
+      for (let i = 0; i < selectBox.options.length; i++) {
+        if (selectBox.options[i].value.includes(courseName) || courseName.includes(selectBox.options[i].value)) {
+          selectBox.selectedIndex = i;
+          break;
+        }
+      }
+
+      noteBox.value = আমি "${courseName}" কোর্সে অংশগ্রহণ করতে আগ্রহী। ব্যাচ শিডিউল ও ফি জানালে উপকৃত হবো।;
+      registerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Form Submission Handling
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const submitBtn = document.getElementById('form-submit-btn');
+      const alertBox = document.getElementById('form-alert');
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <i class="fa-solid fa-spinner fa-spin mr-2"></i>
+        <span>তথ্য জমা হচ্ছে...</span>
+      `;
+
+      setTimeout(() => {
+        alertBox.classList.remove('hidden');
+        alertBox.classList.add('flex');
+        document.getElementById('lead-form').reset();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `
+          <i class="fa-solid fa-paper-plane text-xs mr-2"></i>
+          <span>আগ্রহ জমা দিন (Register Early Access)</span>
+        `;
+        alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 700);
+    }
+  </script>
+</body>
+</html>
